@@ -34,8 +34,6 @@
 	PG::addRule(array('/\:ucl\:/i', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'));
 	// Klein- und Grossbuchstaben (upper-/lowercase letters)
 	PG::addRule(array('/\:ull\:/i', 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'));
-	// Und was dir sonst noch einfaellt.....
-	PG::addRule(array('/\:hurr\:/i', 'durr'));
 	
 	
 	/**
@@ -43,6 +41,7 @@
 	 * aktuellen Werte verwenden anstatt die vordefinierten.
 	 */
 	$Values = array();
+	$test = "abc";
 	
 	/* Standard-Passwortmuster - damit man schon Ergebnisse sieht auch wenn man noch nix submitted hat */
 	$Values['pattern'] = "{abcdef0123456789,16}";
